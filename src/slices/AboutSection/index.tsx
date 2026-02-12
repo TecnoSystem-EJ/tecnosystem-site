@@ -13,7 +13,7 @@ export type AboutSectionProps = SliceComponentProps<Content.AboutSectionSlice>;
 /**
  * Component for "AboutSection" Slices.
  */
-const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
+const AboutSection = ({ slice }: AboutSectionProps) => {
   return (
     <section
       className="flex flex-col w-full gap-8 md:gap-16 mb-8 md:mb-16"

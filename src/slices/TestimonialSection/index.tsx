@@ -19,7 +19,7 @@ export type TestimonialSectionProps =
  */
 const TestimonialSection = ({
   slice,
-}: TestimonialSectionProps): JSX.Element => {
+}: TestimonialSectionProps) => {
   return (
     <section
       data-slice-type={slice.slice_type}
@@ -42,7 +42,7 @@ const TestimonialSection = ({
           />
         ))}
         <Image
-          src="./linetech.svg"
+          src="/linetech.svg"
           width={512}
           height={151}
           alt="Techline"

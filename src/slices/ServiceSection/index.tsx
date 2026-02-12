@@ -10,7 +10,7 @@ export type ServiceSectionProps =
 /**
  * Component for "ServiceSection" Slices.
  */
-const ServiceSection = ({ slice }: ServiceSectionProps): JSX.Element => {
+const ServiceSection = ({ slice }: ServiceSectionProps) => {
   return (
     <section
       data-slice-type={slice.slice_type}

@@ -16,7 +16,7 @@ export type HeaderSectionProps = SliceComponentProps<Content.HeaderSectionSlice>
  * Component for "HeaderSection" Slices.
  */
 
-const HeaderSection = ({ slice }: HeaderSectionProps): JSX.Element => {
+const HeaderSection = ({ slice }: HeaderSectionProps) => {
   return (
     <section
       data-slice-type={slice.slice_type}

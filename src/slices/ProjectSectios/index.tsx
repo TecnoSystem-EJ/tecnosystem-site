@@ -10,7 +10,7 @@ export type ProjectSectiosProps =
 /**
  * Component for "ProjectSectios" Slices.
  */
-const ProjectSectios = ({ slice }: ProjectSectiosProps): JSX.Element => {
+const ProjectSectios = ({ slice }: ProjectSectiosProps) => {
   return (
     <section
       data-slice-type={slice.slice_type}

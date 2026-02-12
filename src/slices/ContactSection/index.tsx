@@ -10,7 +10,7 @@ export type ContactSectionProps =
 /**
  * Component for "ContactSection" Slices.
  */
-const ContactSection = ({ slice }: ContactSectionProps): JSX.Element => {
+const ContactSection = ({ slice }: ContactSectionProps) => {
   return (
     <section
       data-slice-type={slice.slice_type}
