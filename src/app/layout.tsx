@@ -35,7 +35,7 @@ export default async function RootLayout({
       className={`${inter.variable} ${righteous.variable} text-black m-0 p-0 bg-gray-alt`}
     >
       <body>
-        <NavBar navBar={navBar} />
+        {navBar && <NavBar navBar={navBar} />}
         <FloatIcon/>
         <div className="mx-auto container px-4 uppercase w-full">
           {children}
