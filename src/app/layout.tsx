@@ -26,7 +26,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const client = createClient();
-  const navBar = await client.getSingle("navbar");
+  const navBar = await client.getSingle("navbar").catch(() => null);
 
 
   return (
