@@ -2,7 +2,7 @@
   "id": "contact_section",
   "type": "SharedSlice",
   "name": "ContactSection",
-  "description": "ContactSection",
+  "description": "Secção de Contato",
   "variations": [
     {
       "id": "default",
@@ -10,7 +10,39 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título",
+            "placeholder": "Ex: Fale Connosco",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Texto Descritivo",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "E-mail da Empresa"
+          }
+        },
+        "phone": {
+          "type": "Text",
+          "config": {
+            "label": "Telefone / WhatsApp"
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }

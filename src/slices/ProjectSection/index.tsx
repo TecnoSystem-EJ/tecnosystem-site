@@ -1,23 +1,52 @@
 import { Content } from "@prismicio/client";
-import { SliceComponentProps } from "@prismicio/react";
+import { SliceComponentProps, PrismicRichText } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
 
-/**
- * Props for `ProjectSection`.
- */
-export type ProjectSectionProps =
-  SliceComponentProps<Content.ProjectSectionSlice>;
+export type ProjectSectionProps = SliceComponentProps<Content.ProjectSectionSlice>;
 
-/**
- * Component for "ProjectSection" Slices.
- */
 const ProjectSection = ({ slice }: ProjectSectionProps) => {
   return (
-    <section
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
+    <section 
+      data-slice-type={slice.slice_type} 
+      data-slice-variation={slice.variation} 
+      className="py-16 bg-white"
     >
-      Placeholder component for project_section (variation: {slice.variation})
-      Slices
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="text-center mb-12">
+          <div className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <PrismicRichText field={slice.primary.title} />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {slice.items.map((item, index) => (
+            <div 
+              key={index} 
+              className="flex flex-col rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200"
+            >
+              {/* Imagem do Projeto */}
+              <div className="w-full h-56 relative bg-gray-200">
+                <PrismicNextImage 
+                  field={item.project_image} 
+                  fallbackAlt=""
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Conteúdo do Projeto */}
+              <div className="p-6 flex-1 flex flex-col bg-white">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {item.project_title}
+                </h3>
+                <div className="text-gray-600">
+                  <PrismicRichText field={item.project_description} />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

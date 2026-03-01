@@ -7,7 +7,7 @@ export const components = {
   contact_section: dynamic(() => import("./ContactSection")),
   header_section: dynamic(() => import("./HeaderSection")),
   project_section: dynamic(() => import("./ProjectSection")),
-  project_sectios: dynamic(() => import("./ProjectSectios")),
   service_section: dynamic(() => import("./ServiceSection")),
+  stack_section: dynamic(() => import("./StackSection")),
   testimonial_section: dynamic(() => import("./TestimonialSection")),
 };

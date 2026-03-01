@@ -2,7 +2,7 @@
   "id": "project_section",
   "type": "SharedSlice",
   "name": "ProjectSection",
-  "description": "ProjectSection",
+  "description": "Portfólio de Projetos",
   "variations": [
     {
       "id": "default",
@@ -10,7 +10,44 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título da Secção",
+            "placeholder": "Ex: Alguns Projetos Realizados",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "project_image": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem do Projeto",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_title": {
+          "type": "Text",
+          "config": {
+            "label": "Título do Projeto",
+            "placeholder": "Ex: GuiaServ"
+          }
+        },
+        "project_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descrição do Projeto",
+            "placeholder": "Fale um pouco sobre o projeto",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      }
     }
   ]
 }

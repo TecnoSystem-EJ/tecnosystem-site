@@ -1,8 +1,8 @@
 {
-  "id": "testimonial_section",
+  "id": "stack_section",
   "type": "SharedSlice",
-  "name": "TestimonialSection",
-  "description": "Secção de Depoimentos dos Clientes",
+  "name": "StackSection",
+  "description": "Secção de Tecnologias (Stack)",
   "variations": [
     {
       "id": "default",
@@ -16,27 +16,26 @@
           "type": "StructuredText",
           "config": {
             "label": "Título da Secção",
-            "placeholder": "Ex: O que dizem sobre nós",
+            "placeholder": "Ex: Nossas Tecnologias",
             "allowTargetBlank": true,
             "single": "heading2"
           }
         }
       },
       "items": {
-        "client_name": {
+        "tech_name": {
           "type": "Text",
           "config": {
-            "label": "Nome do Cliente",
-            "placeholder": "Ex: João Silva"
+            "label": "Nome da Tecnologia",
+            "placeholder": "Ex: React, Node.js, Figma..."
           }
         },
-        "testimonial_text": {
-          "type": "StructuredText",
+        "tech_image": {
+          "type": "Image",
           "config": {
-            "label": "Texto do Depoimento",
-            "placeholder": "Escreva o depoimento aqui...",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "label": "Logótipo da Tecnologia",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       }

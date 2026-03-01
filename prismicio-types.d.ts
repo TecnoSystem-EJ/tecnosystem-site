@@ -466,6 +466,51 @@ export type AboutSectionSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *ContactSection → Default → Primary*
+ */
+export interface ContactSectionSliceDefaultPrimary {
+  /**
+   * Título field in *ContactSection → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Ex: Fale Connosco
+   * - **API ID Path**: contact_section.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Texto Descritivo field in *ContactSection → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_section.default.primary.description
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * E-mail da Empresa field in *ContactSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_section.default.primary.email
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  email: prismic.KeyTextField;
+
+  /**
+   * Telefone / WhatsApp field in *ContactSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_section.default.primary.phone
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  phone: prismic.KeyTextField;
+}
+
+/**
  * Default variation for ContactSection Slice
  *
  * - **API ID**: `default`
@@ -474,7 +519,7 @@ export type AboutSectionSlice = prismic.SharedSlice<
  */
 export type ContactSectionSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<ContactSectionSliceDefaultPrimary>,
   never
 >;
 
@@ -487,7 +532,7 @@ type ContactSectionSliceVariation = ContactSectionSliceDefault;
  * ContactSection Shared Slice
  *
  * - **API ID**: `contact_section`
- * - **Description**: ContactSection
+ * - **Description**: Secção de Contato
  * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContactSectionSlice = prismic.SharedSlice<
@@ -668,6 +713,56 @@ export type HeaderSectionSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *ProjectSection → Default → Primary*
+ */
+export interface ProjectSectionSliceDefaultPrimary {
+  /**
+   * Título da Secção field in *ProjectSection → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Ex: Alguns Projetos Realizados
+   * - **API ID Path**: project_section.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  title: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *ProjectSection → Items*
+ */
+export interface ProjectSectionSliceDefaultItem {
+  /**
+   * Imagem do Projeto field in *ProjectSection → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_section.items[].project_image
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  project_image: prismic.ImageField<never>;
+
+  /**
+   * Título do Projeto field in *ProjectSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Ex: GuiaServ
+   * - **API ID Path**: project_section.items[].project_title
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  project_title: prismic.KeyTextField;
+
+  /**
+   * Descrição do Projeto field in *ProjectSection → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Fale um pouco sobre o projeto
+   * - **API ID Path**: project_section.items[].project_description
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  project_description: prismic.RichTextField;
+}
+
+/**
  * Default variation for ProjectSection Slice
  *
  * - **API ID**: `default`
@@ -676,8 +771,8 @@ export type HeaderSectionSlice = prismic.SharedSlice<
  */
 export type ProjectSectionSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
-  never
+  Simplify<ProjectSectionSliceDefaultPrimary>,
+  Simplify<ProjectSectionSliceDefaultItem>
 >;
 
 /**
@@ -689,7 +784,7 @@ type ProjectSectionSliceVariation = ProjectSectionSliceDefault;
  * ProjectSection Shared Slice
  *
  * - **API ID**: `project_section`
- * - **Description**: ProjectSection
+ * - **Description**: Portfólio de Projetos
  * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ProjectSectionSlice = prismic.SharedSlice<
@@ -698,34 +793,44 @@ export type ProjectSectionSlice = prismic.SharedSlice<
 >;
 
 /**
- * Default variation for ProjectSectios Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slices
+ * Primary content in *ServiceSection → Default → Primary*
  */
-export type ProjectSectiosSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Record<string, never>,
-  never
->;
+export interface ServiceSectionSliceDefaultPrimary {
+  /**
+   * Título da Secção field in *ServiceSection → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Ex: Nossos Serviços
+   * - **API ID Path**: service_section.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  title: prismic.RichTextField;
+}
 
 /**
- * Slice variation for *ProjectSectios*
+ * Primary content in *ServiceSection → Items*
  */
-type ProjectSectiosSliceVariation = ProjectSectiosSliceDefault;
+export interface ServiceSectionSliceDefaultItem {
+  /**
+   * Nome do Serviço field in *ServiceSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Ex: Desenvolvimento Web
+   * - **API ID Path**: service_section.items[].service_name
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  service_name: prismic.KeyTextField;
 
-/**
- * ProjectSectios Shared Slice
- *
- * - **API ID**: `project_sectios`
- * - **Description**: ProjectSectios
- * - **Documentation**: https://prismic.io/docs/slices
- */
-export type ProjectSectiosSlice = prismic.SharedSlice<
-  "project_sectios",
-  ProjectSectiosSliceVariation
->;
+  /**
+   * Descrição do Serviço field in *ServiceSection → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Breve descrição do que consiste o serviço
+   * - **API ID Path**: service_section.items[].service_description
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  service_description: prismic.RichTextField;
+}
 
 /**
  * Default variation for ServiceSection Slice
@@ -736,8 +841,8 @@ export type ProjectSectiosSlice = prismic.SharedSlice<
  */
 export type ServiceSectionSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
-  never
+  Simplify<ServiceSectionSliceDefaultPrimary>,
+  Simplify<ServiceSectionSliceDefaultItem>
 >;
 
 /**
@@ -749,7 +854,7 @@ type ServiceSectionSliceVariation = ServiceSectionSliceDefault;
  * ServiceSection Shared Slice
  *
  * - **API ID**: `service_section`
- * - **Description**: ServiceSection
+ * - **Description**: Secção de Serviços oferecidos
  * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ServiceSectionSlice = prismic.SharedSlice<
@@ -758,28 +863,48 @@ export type ServiceSectionSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Default variation for StackSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type StackSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *StackSection*
+ */
+type StackSectionSliceVariation = StackSectionSliceDefault;
+
+/**
+ * StackSection Shared Slice
+ *
+ * - **API ID**: `stack_section`
+ * - **Description**: StackSection
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type StackSectionSlice = prismic.SharedSlice<
+  "stack_section",
+  StackSectionSliceVariation
+>;
+
+/**
  * Primary content in *TestimonialSection → Default → Primary*
  */
 export interface TestimonialSectionSliceDefaultPrimary {
   /**
-   * Text Card Title field in *TestimonialSection → Default → Primary*
+   * Título da Secção field in *TestimonialSection → Default → Primary*
    *
    * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testimonial_section.default.primary.text_card_title
+   * - **Placeholder**: Ex: O que dizem sobre nós
+   * - **API ID Path**: testimonial_section.default.primary.title
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
-  text_card_title: prismic.RichTextField;
-
-  /**
-   * Text Card Subtitle field in *TestimonialSection → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testimonial_section.default.primary.text_card_subtitle
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  text_card_subtitle: prismic.RichTextField;
+  title: prismic.RichTextField;
 }
 
 /**
@@ -787,44 +912,24 @@ export interface TestimonialSectionSliceDefaultPrimary {
  */
 export interface TestimonialSectionSliceDefaultItem {
   /**
-   * Image field in *TestimonialSection → Items*
+   * Nome do Cliente field in *TestimonialSection → Items*
    *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testimonial_section.items[].image
-   * - **Documentation**: https://prismic.io/docs/fields/image
+   * - **Field Type**: Text
+   * - **Placeholder**: Ex: João Silva
+   * - **API ID Path**: testimonial_section.items[].client_name
+   * - **Documentation**: https://prismic.io/docs/fields/text
    */
-  image: prismic.ImageField<never>;
+  client_name: prismic.KeyTextField;
 
   /**
-   * Title field in *TestimonialSection → Items*
+   * Texto do Depoimento field in *TestimonialSection → Items*
    *
    * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testimonial_section.items[].title
+   * - **Placeholder**: Escreva o depoimento aqui...
+   * - **API ID Path**: testimonial_section.items[].testimonial_text
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
-  title: prismic.RichTextField;
-
-  /**
-   * Text field in *TestimonialSection → Items*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testimonial_section.items[].text
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  text: prismic.RichTextField;
-
-  /**
-   * Score field in *TestimonialSection → Items*
-   *
-   * - **Field Type**: Number
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testimonial_section.items[].score
-   * - **Documentation**: https://prismic.io/docs/fields/number
-   */
-  score: prismic.NumberField;
+  testimonial_text: prismic.RichTextField;
 }
 
 /**
@@ -849,7 +954,7 @@ type TestimonialSectionSliceVariation = TestimonialSectionSliceDefault;
  * TestimonialSection Shared Slice
  *
  * - **API ID**: `testimonial_section`
- * - **Description**: TestimonialSection
+ * - **Description**: Secção de Depoimentos dos Clientes
  * - **Documentation**: https://prismic.io/docs/slices
  */
 export type TestimonialSectionSlice = prismic.SharedSlice<
@@ -897,6 +1002,7 @@ declare module "@prismicio/client" {
       AboutSectionSliceVariation,
       AboutSectionSliceDefault,
       ContactSectionSlice,
+      ContactSectionSliceDefaultPrimary,
       ContactSectionSliceVariation,
       ContactSectionSliceDefault,
       HeaderSectionSlice,
@@ -905,14 +1011,18 @@ declare module "@prismicio/client" {
       HeaderSectionSliceVariation,
       HeaderSectionSliceDefault,
       ProjectSectionSlice,
+      ProjectSectionSliceDefaultPrimary,
+      ProjectSectionSliceDefaultItem,
       ProjectSectionSliceVariation,
       ProjectSectionSliceDefault,
-      ProjectSectiosSlice,
-      ProjectSectiosSliceVariation,
-      ProjectSectiosSliceDefault,
       ServiceSectionSlice,
+      ServiceSectionSliceDefaultPrimary,
+      ServiceSectionSliceDefaultItem,
       ServiceSectionSliceVariation,
       ServiceSectionSliceDefault,
+      StackSectionSlice,
+      StackSectionSliceVariation,
+      StackSectionSliceDefault,
       TestimonialSectionSlice,
       TestimonialSectionSliceDefaultPrimary,
       TestimonialSectionSliceDefaultItem,

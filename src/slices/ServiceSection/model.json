@@ -2,7 +2,7 @@
   "id": "service_section",
   "type": "SharedSlice",
   "name": "ServiceSection",
-  "description": "ServiceSection",
+  "description": "Secção de Serviços oferecidos",
   "variations": [
     {
       "id": "default",
@@ -10,7 +10,36 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título da Secção",
+            "placeholder": "Ex: Nossos Serviços",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "service_name": {
+          "type": "Text",
+          "config": {
+            "label": "Nome do Serviço",
+            "placeholder": "Ex: Desenvolvimento Web"
+          }
+        },
+        "service_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descrição do Serviço",
+            "placeholder": "Breve descrição do que consiste o serviço",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      }
     }
   ]
 }
