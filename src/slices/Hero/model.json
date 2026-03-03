@@ -1,0 +1,77 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "nome_da_empresa": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nome da Empresa",
+            "placeholder": "Adicione o nome da empresa",
+            "allowTargetBlank": true,
+            "multi": "heading3"
+          }
+        },
+        "hero_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Hero Text",
+            "placeholder": "Adicione o Título do seu Hero",
+            "allowTargetBlank": true,
+            "multi": "heading1,strong,em"
+          }
+        },
+        "topicos_hero": {
+          "type": "Group",
+          "config": {
+            "label": "Topicos Hero",
+            "repeat": true,
+            "fields": {
+              "texto": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Texto",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              }
+            }
+          }
+        },
+        "button_contate": {
+          "type": "Link",
+          "config": {
+            "label": "Button Contate",
+            "placeholder": "Botão para contato",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "button_saibamais": {
+          "type": "Link",
+          "config": {
+            "label": "Button SaibaMais",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

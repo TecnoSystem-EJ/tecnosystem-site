@@ -1,0 +1,223 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"testimonials_titulo": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Saiba de quem aprova",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"testimonials_cta": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Veja o que nossos clientes estão falando.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"testimonials_subtitulo": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Leia nossos feddbacks",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"testimonial": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"testimonial_text",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Nisi sunt nisi deserunt nulla fugiat ut velit veniam anim culpa laboris enim. Veniam fugiat laborum duis eiusmod nisi qui est qui anim irure sunt. Sint magna aliquip aute."
+											}
+										}
+									]
+								}
+							],
+							[
+								"testimonial_img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+										"width": 4172,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?rect=86%2C0%2C4000%2C4000&w=50&h=50",
+									"width": 50,
+									"height": 50,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 86,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "see",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"testimonial_empresa",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Empresa de Fulano",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"testimonial_user",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fulano",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"testimonial_img",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NjgzMjQ5MDd8MA&ixlib=rb-4.1.0&q=85&rect=0,927,3709,3709&w=50&h=50",
+									"alt": "assorted sliced citrus fruits on brown wooden chopping board",
+									"origin": {
+										"id": "1CsaVdwfIew",
+										"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NjgzMjQ5MDd8MA&ixlib=rb-4.1.0&q=85",
+										"width": 3709,
+										"height": 5563
+									},
+									"width": 50,
+									"height": 50,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 927
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"testimonial_text",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Nisi sunt nisi deserunt nulla fugiat ut velit veniam anim culpa laboris enim. Veniam fugiat laborum duis eiusmod nisi qui est qui anim irure sunt. Sint magna aliquip aute.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"testimonial_user",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fulano",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"testimonial_empresa",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Empresa de Fulano",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						],
+						"key": "a14724e7-afd2-4e7c-9397-5977ab114c66"
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [],
+						"key": "39a7cd2f-346a-460f-b91d-72468f51a25a"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

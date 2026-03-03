@@ -1,0 +1,93 @@
+{
+  "id": "testimonials",
+  "type": "SharedSlice",
+  "name": "Testimonials",
+  "description": "Testimonials",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "testimonials_titulo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Testimonials Titulo",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "testimonials_subtitulo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Testimonials Subtitulo",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "testimonials_cta": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Testimonials CTA",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "testimonial": {
+          "type": "Group",
+          "config": {
+            "label": "testimonial",
+            "repeat": true,
+            "fields": {
+              "testimonial_text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Testimonial text",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "testimonial_img": {
+                "type": "Image",
+                "config": {
+                  "label": "Testimonial img",
+                  "constraint": {
+                    "width": 50,
+                    "height": 50
+                  },
+                  "thumbnails": []
+                }
+              },
+              "testimonial_user": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "testimonial user",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "testimonial_empresa": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "testimonial empresa",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
