@@ -46,19 +46,31 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "contact_section": {
+            "header_section": {
               "type": "SharedSlice"
             },
-            "project_section": {
+            "stack_section": {
               "type": "SharedSlice"
             },
             "service_section": {
               "type": "SharedSlice"
             },
-            "header_section": {
+            "project_section": {
+              "type": "SharedSlice"
+            },
+            "contact_section": {
               "type": "SharedSlice"
             },
             "about_section": {
+              "type": "SharedSlice"
+            },
+            "cta_footer": {
+              "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "hero": {
               "type": "SharedSlice"
             }
           }
