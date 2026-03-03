@@ -7,7 +7,7 @@ const NavBarList = async () => {
   const page = await client.getSingle("home");
   return (
     <ul className="hidden md:flex justify-between gap-6 lg:text-[20px] md:text-sm font-secondary font-[600] uppercase">
-      {page.data.navigation.map((item: any) => {
+      {page.data.navigation?.map((item: any) => {
         return (
           <li
             key={item.label}

@@ -18,7 +18,7 @@ const Header = async () => {
               <ul className="flex gap-6 font-bold text-lg ">
                   {/* Navigation links */}
                   {/* chama o item de navegação e escolhe o index(link) e a info(label) */}
-                  {page.data.navigation.map((item, index) => (
+                  {page.data.navigation?.map((item, index) => (
                       <li className="transition-all duration-300 text-xl uppercase ease-initial hover:text-red-600" key={index}>
                           <PrismicNextLink field={item.link as any}>{item.label}</PrismicNextLink>
                       </li>
