@@ -14,9 +14,14 @@ const ContactForm = () => {
 
     if (form.current) {
       emailjs
-        .sendForm("service_k7o1761", "template_0me0my8", form.current, {
-          publicKey: "a0cdWPbQf1dnIM28Y",
-        })
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+          form.current,
+          {
+            publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "",
+          }
+        )
         .then(
           () => {
             alert("Mensagem enviada!");

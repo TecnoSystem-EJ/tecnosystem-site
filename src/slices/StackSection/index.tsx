@@ -1,8 +1,7 @@
-import { Content } from "@prismicio/client";
 import { SliceComponentProps, PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
-export type StackSectionProps = SliceComponentProps<Content.StackSectionSlice>;
+export type StackSectionProps = SliceComponentProps<any>;
 
 const StackSection = ({ slice }: StackSectionProps) => {
   return (
@@ -20,15 +19,15 @@ const StackSection = ({ slice }: StackSectionProps) => {
 
         {/* Grelha de Tecnologias */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
-          {slice.items.map((item, index) => (
+          {slice.items.map((item: any, index: number) => (
             <div 
               key={index} 
               className="flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full border border-gray-100"
             >
               {/* Logótipo da Tecnologia */}
               <div className="w-16 h-16 relative mb-4">
-                <PrismicNextImage 
-                  field={item.tech_image as any} 
+                <PrismicNextImage
+                  field={item.tech_image}
                   fallbackAlt=""
                   fill
                   className="object-contain"

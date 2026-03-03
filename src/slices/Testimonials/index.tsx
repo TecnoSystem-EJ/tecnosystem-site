@@ -112,7 +112,7 @@ const Testimonials: FC<TestimonialsProps> = ({ slice }) => {
               }}
               className="w-full"
             >
-              {testimonials.map((item, index) => (
+              {testimonials.map((item: any, index: number) => (
                 <SwiperSlide key={index} className="h-auto">
                   <TestimonialCard item={item} />
                 </SwiperSlide>
@@ -120,7 +120,7 @@ const Testimonials: FC<TestimonialsProps> = ({ slice }) => {
             </Swiper>
           ) : (
             <div className="grid md:grid-cols-2 gap-6">
-              {testimonials.map((item, index) => (
+              {testimonials.map((item: any, index: number) => (
                 <TestimonialCard key={index} item={item} />
                 
               ))}
@@ -138,7 +138,7 @@ export default Testimonials;
    CARD
 =========================== */
 
-const TestimonialCard = ({ item }: any) => {
+const TestimonialCard = ({ item }: { item: any }) => {
   return (
     <div className="p-4 w-[400px] h-full">
       <div className="p-4 w-full min-h-[220px] bg-white shadow-lg rounded-lg mb-6">

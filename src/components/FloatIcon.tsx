@@ -1,19 +1,26 @@
+"use client";
+
 import React, { ReactNode } from "react";
-import { createClient } from "@/prismicio";
 import { FaWhatsapp } from "react-icons/fa";
 import { PrismicNextLink } from "@prismicio/next";
 
 const ICON: Record<string, ReactNode> = {
   "1": <FaWhatsapp size={30} />,
 };
-const FloatIcon = async () => {
-  const client = createClient();
-  const floatwpp: any = await client.getSingle("floatwpp" as any);
-  const whatsappArray = floatwpp.data.whatsapp;
 
+interface WhatsappItem {
+  link: any;
+  icon: string;
+}
+
+interface FloatIconProps {
+  whatsappArray: WhatsappItem[];
+}
+
+const FloatIcon = ({ whatsappArray }: FloatIconProps) => {
   return (
     <div className="flex flex-col w-1/2 gap-5">
-      {whatsappArray.map((item, index) => (
+      {whatsappArray.map((item: WhatsappItem, index: number) => (
         <PrismicNextLink
           key={index}
           field={item.link}

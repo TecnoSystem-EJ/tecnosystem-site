@@ -1,5 +1,4 @@
 import React from "react";
-import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import TextCard from "@/components/TextCard";
 import SliderComponent from "@/components/SliderComponent";
@@ -8,7 +7,7 @@ import Image from "next/image";
 /**
  * Props for `AboutSection`.
  */
-export type AboutSectionProps = SliceComponentProps<Content.AboutSectionSlice>;
+export type AboutSectionProps = SliceComponentProps<any>;
 
 /**
  * Component for "AboutSection" Slices.

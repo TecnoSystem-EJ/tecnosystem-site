@@ -1,8 +1,7 @@
-import { Content } from "@prismicio/client";
 import { SliceComponentProps, PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
-export type ProjectSectionProps = SliceComponentProps<Content.ProjectSectionSlice>;
+export type ProjectSectionProps = SliceComponentProps<any>;
 
 const ProjectSection = ({ slice }: ProjectSectionProps) => {
   return (
@@ -19,7 +18,7 @@ const ProjectSection = ({ slice }: ProjectSectionProps) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {slice.items.map((item, index) => (
+          {slice.items.map((item: any, index: number) => (
             <div 
               key={index} 
               className="flex flex-col rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200"

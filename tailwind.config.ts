@@ -21,6 +21,8 @@ const config: Config = {
         black: "#1E1E1E",
       },
       fontFamily: {
+        righteous: ["var(--font-righteous)"],
+        dm: ["var(--font-dm)"],
         primary: ["var(--font-righteous)"],
         secondary: ["var(--font-inter)"],
       },

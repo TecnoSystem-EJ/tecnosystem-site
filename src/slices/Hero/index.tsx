@@ -1,7 +1,7 @@
-import { Children, FC } from "react";
+import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { PrismicNextLink } from "@prismicio/next";
 
 /**
  * Props for `Hero`.
@@ -17,11 +17,11 @@ const Hero: FC<HeroProps> = ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className="mr-24 ml-24 mb-10"
-    > 
+    >
     {/* Nome da Empresa */}
       <PrismicRichText field={slice.primary.nome_da_empresa} components={{
         heading3: ({ children }) => <h3 className="text-3xl mb-2 font-black text-red-600 font-righteous">{children}</h3>,
-      }}/> 
+      }}/>
 
       {/* Títlo do Hero */}
       <PrismicRichText
@@ -40,7 +40,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
 
 
       {/* Tópicos de Subtítulo */}
-      {slice.primary.topicos_hero.map((item, index) => (
+      {slice.primary.topicos_hero.map((item: any, index: number) => (
         <div key={index} className="flex gap-2 items-start">
           <i className="bi bi-check-circle-fill text-lg text-red-600"></i>
           <PrismicRichText

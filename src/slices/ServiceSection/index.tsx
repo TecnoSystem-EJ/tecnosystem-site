@@ -1,7 +1,6 @@
-import { Content } from "@prismicio/client";
 import { SliceComponentProps, PrismicRichText } from "@prismicio/react";
 
-export type ServiceSectionProps = SliceComponentProps<Content.ServiceSectionSlice>;
+export type ServiceSectionProps = SliceComponentProps<any>;
 
 const ServiceSection = ({ slice }: ServiceSectionProps) => {
   return (
@@ -20,7 +19,7 @@ const ServiceSection = ({ slice }: ServiceSectionProps) => {
 
         {/* Grelha de Serviços */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {slice.items.map((item, index) => (
+          {slice.items.map((item: any, index: number) => (
             <div 
               key={index} 
               className="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300 border border-gray-100"

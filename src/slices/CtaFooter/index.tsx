@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Image from "next/image";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
@@ -82,14 +83,14 @@ const CtaFooter: FC<CtaFooterProps> = ({ slice }) => {
 
         {/* BOTÕES DE REDES SOCIAIS */}
         <div className="p-4 flex justify-between">
-          {slice.primary.socials.map((item, index) => (
+          {slice.primary.socials.map((item: any, index: number) => (
           <PrismicNextLink key={index} field={item.socials_link} >
             <PrismicNextImage field={item.image} className="w-10 m-6 text-white"/>
           </PrismicNextLink>
         ))}
         </div>
       </div>
-      <img src="/ctaimage.png" alt="Programador" className="absolute right-20 top-0 rounded-lg"/>
+      <Image src="/ctaimage.png" alt="Programador" width={400} height={300} className="absolute right-20 top-0 rounded-lg"/>
     </section>
   );
 };

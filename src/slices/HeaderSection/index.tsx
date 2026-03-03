@@ -1,7 +1,6 @@
 // Flow
 import React from "react";
 //  Prismic
-import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 //  Components
@@ -11,7 +10,7 @@ import Button from "@/components/Button";
 /**
  * Props for HeaderSection.
  */
-export type HeaderSectionProps = SliceComponentProps<Content.HeaderSectionSlice>;
+export type HeaderSectionProps = SliceComponentProps<any>;
 /**
  * Component for "HeaderSection" Slices.
  */
@@ -44,7 +43,7 @@ const HeaderSection = ({ slice }: HeaderSectionProps) => {
         </div>
 
         <ul className="flex flex-col gap-2">
-          {slice.items.map((item, index) => (
+          {slice.items.map((item: any, index: number) => (
             <List key={index} text={item.topics} />
           ))}
         </ul>
