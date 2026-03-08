@@ -3,65 +3,10 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"text": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Et tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deserunt.Et tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deseruntEt tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deserunt",
-							"spans": []
-						},
-						"direction": "ltr"
-					},
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "",
-							"spans": []
-						},
-						"direction": "ltr"
-					},
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Et tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deseruntEt tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deseruntEt tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deseruntEt tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deserunt",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"text_card_subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "e vamos ajudar você!",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
 			"company_name": {
 				"__TYPE__": "FieldContent",
 				"type": "Text",
 				"value": "tecnosystem"
-			},
-			"text_card_title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading3",
-						"content": {
-							"text": "projetos que temos orgulho",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
 			},
 			"company_image": {
 				"origin": {
@@ -92,8 +37,10 @@
 					{
 						"type": "heading3",
 						"content": {
-							"text": "Feathers"
-						}
+							"text": "Quem somos",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -103,7 +50,28 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Pariatur commodo id consectetur reprehen",
+							"text": "Conheça a tecnosystem",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "A Tecno System é uma Empresa Júnior inovadora do Cursos de Sistemas de Informação e Engenharia de Software da Universidade do Estado da Bahia – Campus II, situada em Alagoinhas - BA, atua no mercado de TI desde o ano de 2001 sendo gerida por alunos do curso. Instituição sem fins lucrativos, a Tecno System tem como objetivos principais capacitar seus membros através de cursos e projetos gerando assim aprendizado e preparando-os para o mercado de trabalho, além de promover serviços de qualidade que satisfaçam ao máximo seus clientes. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nossa missão é desenvolver soluções tecnológicas acessíveis e de qualidade, promovendo o crescimento de nossos clientes e a capacitação dos membros da empresa.  ",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -114,378 +82,27 @@
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"image",
-						{
-							"origin": {
-								"id": "KVv5lFOMY1E",
-								"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-								"width": 3024,
-								"height": 4032
-							},
-							"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-							"width": 3024,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"credits": null,
-							"alt": "bunch of strawberries",
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					],
-					[
-						"title",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading2",
-									"content": {
-										"text": "Medlembre",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Et tempor in sit pariatur commodo duis excepteur minim. Consequat et dolor sunt elit laborum sit nisi deseruntEt tempor in sit pariatur commodo duis ex",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					]
-				]
+				"value": []
 			},
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"image",
-						{
-							"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-							"alt": "bunch of strawberries",
-							"origin": {
-								"id": "KVv5lFOMY1E",
-								"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-								"width": 3024,
-								"height": 4032
-							},
-							"width": 3024,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"credits": null,
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					],
-					[
-						"title",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading2",
-									"content": {
-										"text": "Forever",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "excepteur laborum dolor eu ess consequatcupidatat aute est laborum non do. labore esse velit occaecat ad consectetur proident nisi magna cillum elit ullamco quis cillum.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					]
-				]
+				"value": []
 			},
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading2",
-									"content": {
-										"text": "Satoru",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "simplesmente não consigo entender pq esse ficou no meio aaaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa ",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"image",
-						{
-							"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-							"alt": "bunch of strawberries",
-							"origin": {
-								"id": "KVv5lFOMY1E",
-								"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-								"width": 3024,
-								"height": 4032
-							},
-							"width": 3024,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"credits": null,
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					]
-				]
+				"value": []
 			},
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-							"alt": "bunch of strawberries",
-							"origin": {
-								"id": "KVv5lFOMY1E",
-								"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-								"width": 3024,
-								"height": 4032
-							},
-							"width": 3024,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					],
-					[
-						"title",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading2",
-									"content": {
-										"text": "Medlembre",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "excepteur laborum dolor eu ess consequatcupidatat aute est laborum non do. labore esse velit occaecat ad consectetur proident nisi magna cillum elit ullamco quis cillum.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					]
-				]
+				"value": []
 			},
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading2",
-									"content": {
-										"text": "Medlembre",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Lxcepteur laborum dolor eu ess consequatcupidatat aute est laborum non do. labore esse velit occaecat ad consectetur proident nisi magna cillum elit ullamco quis cillum.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-							"alt": "bunch of strawberries",
-							"origin": {
-								"id": "KVv5lFOMY1E",
-								"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-								"width": 3024,
-								"height": 4032
-							},
-							"width": 3024,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					]
-				]
+				"value": []
 			},
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading2",
-									"content": {
-										"text": "Medlembre",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Excepteur laborum dolor eu ess consequatcupidatat aute est laborum non do. labore esse velit occaecat ad consectetur proident nisi magna cillum elit ullamco quis cillum.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-							"alt": "bunch of strawberries",
-							"origin": {
-								"id": "KVv5lFOMY1E",
-								"url": "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxmcnVpdHxlbnwwfHx8fDE3MDkwNTgzNDJ8MA&ixlib=rb-4.0.3&q=85",
-								"width": 3024,
-								"height": 4032
-							},
-							"width": 3024,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					]
-				]
+				"value": []
 			}
 		]
 	}
