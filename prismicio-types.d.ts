@@ -400,36 +400,6 @@ export interface AboutSectionSliceDefaultPrimary {
   company_name: prismic.KeyTextField;
 
   /**
-   * Text field in *AboutSection → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about_section.default.primary.text
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  text: prismic.RichTextField;
-
-  /**
-   * Text Card Title field in *AboutSection → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about_section.default.primary.text_card_title
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  text_card_title: prismic.RichTextField;
-
-  /**
-   * Text Card Subtitle field in *AboutSection → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about_section.default.primary.text_card_subtitle
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  text_card_subtitle: prismic.RichTextField;
-
-  /**
    * Paragraph Text Card Title field in *AboutSection → Default → Primary*
    *
    * - **Field Type**: Rich Text
@@ -448,41 +418,16 @@ export interface AboutSectionSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
   paragraph_text_card_subtitle: prismic.RichTextField;
-}
-
-/**
- * Primary content in *AboutSection → Items*
- */
-export interface AboutSectionSliceDefaultItem {
-  /**
-   * Image field in *AboutSection → Items*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about_section.items[].image
-   * - **Documentation**: https://prismic.io/docs/fields/image
-   */
-  image: prismic.ImageField<never>;
 
   /**
-   * Title field in *AboutSection → Items*
+   * Text field in *AboutSection → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: about_section.items[].title
+   * - **API ID Path**: about_section.default.primary.text
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
-  title: prismic.RichTextField;
-
-  /**
-   * Description field in *AboutSection → Items*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about_section.items[].description
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  description: prismic.RichTextField;
+  text: prismic.RichTextField;
 }
 
 /**
@@ -495,7 +440,7 @@ export interface AboutSectionSliceDefaultItem {
 export type AboutSectionSliceDefault = prismic.SharedSliceVariation<
   "default",
   Simplify<AboutSectionSliceDefaultPrimary>,
-  Simplify<AboutSectionSliceDefaultItem>
+  never
 >;
 
 /**
@@ -1350,7 +1295,6 @@ declare module "@prismicio/client" {
       AllDocumentTypes,
       AboutSectionSlice,
       AboutSectionSliceDefaultPrimary,
-      AboutSectionSliceDefaultItem,
       AboutSectionSliceVariation,
       AboutSectionSliceDefault,
       ContactSectionSlice,
