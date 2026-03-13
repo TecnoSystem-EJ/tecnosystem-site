@@ -2,7 +2,190 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
-		"items": []
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Nossas tecnologias",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Next.js"
+						}
+					]
+				],
+				"key": "40afff2e-4cb6-4667-9fa2-1576530cd918"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "React"
+						}
+					]
+				],
+				"key": "2f630599-4c69-41fd-af01-8f93d2a71a7f"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Tailwind CSS"
+						}
+					]
+				],
+				"key": "9338f07b-1547-413f-9247-53544d14b992"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "TypeScript"
+						}
+					]
+				],
+				"key": "02c78a40-1643-426b-ab75-276ff1a30bfe"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Node.js (Express, NestJS)"
+						}
+					]
+				],
+				"key": "86ce2ab2-96fc-475d-aad5-8a1d066deb10"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Python (FastAPI, Django)"
+						}
+					]
+				],
+				"key": "2bd48ec0-b5e4-4a40-b570-cb5e3eee03e3"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "MySQL"
+						}
+					]
+				],
+				"key": "d3ac0f0b-474c-4659-8697-26e92c43249e"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "PostgreSQL"
+						}
+					]
+				],
+				"key": "856cf8e7-d850-45a8-83ec-256ac29c61f4"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "MongoDB"
+						}
+					]
+				],
+				"key": "bc2c210a-e481-4432-ba71-f5af8f651269"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Docker"
+						}
+					]
+				],
+				"key": "ea91aa34-5f75-47a1-8cd0-4ee42425714e"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Vercel"
+						}
+					]
+				],
+				"key": "2af39a64-a03d-476e-b1f1-f83950ae07fc"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Git"
+						}
+					]
+				],
+				"key": "25df5540-de6c-4106-92e6-ea53365b0420"
+			}
+		]
 	}
 ]

@@ -921,7 +921,7 @@ export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
  */
 export interface ProjectSectionSliceDefaultPrimary {
   /**
-   * Título da Secção field in *ProjectSection → Default → Primary*
+   * Nossos projetos! field in *ProjectSection → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: Ex: Alguns Projetos Realizados

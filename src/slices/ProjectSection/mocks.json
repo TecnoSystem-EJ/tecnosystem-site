@@ -2,7 +2,245 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
-		"items": []
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Projetos que temos orgulho ",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"project_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "GuiaServ"
+						}
+					],
+					[
+						"project_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"project_image",
+						{
+							"__TYPE__": "ImageContent",
+							"provider": "imgix",
+							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZHVuZXN8ZW58MHx8fHwxNzczMjI4NjA0fDA&ixlib=rb-4.1.0&q=85",
+							"alt": "sand dune",
+							"origin": {
+								"id": "7Y0NshQLohk",
+								"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZHVuZXN8ZW58MHx8fHwxNzczMjI4NjA0fDA&ixlib=rb-4.1.0&q=85",
+								"width": 3000,
+								"height": 2000
+							},
+							"width": 3000,
+							"height": 2000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"project_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "MedLembre"
+						}
+					],
+					[
+						"project_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"project_image",
+						{
+							"__TYPE__": "ImageContent",
+							"provider": "imgix",
+							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZHVuZXN8ZW58MHx8fHwxNzczMjI4NjA0fDA&ixlib=rb-4.1.0&q=85",
+							"alt": "sand dune",
+							"origin": {
+								"id": "7Y0NshQLohk",
+								"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZHVuZXN8ZW58MHx8fHwxNzczMjI4NjA0fDA&ixlib=rb-4.1.0&q=85",
+								"width": 3000,
+								"height": 2000
+							},
+							"width": 3000,
+							"height": 2000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				],
+				"key": "3525691c-c996-4088-af35-08c97767a174"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"project_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"project_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "ID Visual - Liga da Computação da Bahia"
+						}
+					],
+					[
+						"project_image",
+						{
+							"__TYPE__": "ImageContent",
+							"provider": "imgix",
+							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8RHVuZXN8ZW58MHx8fHwxNzczMjI4Njc1fDA&ixlib=rb-4.1.0&q=85",
+							"alt": "sand dune",
+							"origin": {
+								"id": "7Y0NshQLohk",
+								"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8RHVuZXN8ZW58MHx8fHwxNzczMjI4Njc1fDA&ixlib=rb-4.1.0&q=85",
+								"width": 3000,
+								"height": 2000
+							},
+							"width": 3000,
+							"height": 2000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				],
+				"key": "1941409f-d687-43c4-ab3b-bb71a926fb30"
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"project_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Confirma.ai"
+						}
+					],
+					[
+						"project_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"project_image",
+						{
+							"__TYPE__": "ImageContent",
+							"provider": "imgix",
+							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8RHVuZXN8ZW58MHx8fHwxNzczMjI4Njc1fDA&ixlib=rb-4.1.0&q=85",
+							"alt": "sand dune",
+							"origin": {
+								"id": "7Y0NshQLohk",
+								"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8RHVuZXN8ZW58MHx8fHwxNzczMjI4Njc1fDA&ixlib=rb-4.1.0&q=85",
+								"width": 3000,
+								"height": 2000
+							},
+							"width": 3000,
+							"height": 2000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				],
+				"key": "bb67e00f-3903-4478-b4a3-8f8bb6cb02d1"
+			}
+		]
 	}
 ]
