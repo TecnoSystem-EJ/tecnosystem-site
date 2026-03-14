@@ -5,27 +5,35 @@ export type StackSectionProps = SliceComponentProps<any>;
 
 const StackSection = ({ slice }: StackSectionProps) => {
   return (
-    <section 
-      data-slice-type={slice.slice_type} 
-      data-slice-variation={slice.variation} 
-      className="py-16 bg-gray-50"
+    <section
+      data-slice-type={slice.slice_type}
+      data-slice-variation={slice.variation}
+      className="py-20 bg-gray-100"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-12">
-          <div className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            <PrismicRichText field={slice.primary.title} />
+        {/* Título */}
+        <div className="mb-14">
+          <div className="flex items-start gap-4">
+            {/* Barra vermelha */}
+            <div className="w-1 h-12 bg-red-600 rounded"></div>
+
+            <div>
+              <div className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <PrismicRichText field={slice.primary.title} />
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Grelha de Tecnologias */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
+        {/* Grid de serviços */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {slice.items.map((item: any, index: number) => (
-            <div 
-              key={index} 
-              className="flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 w-full border border-gray-100"
+            <div
+              key={index}
+              className=" bg-red-600 text-white p-8 rounded-xl shadow-md hover:scale-105 transition duration-300"
             >
-              {/* Logótipo da Tecnologia */}
-              <div className="w-16 h-16 relative mb-4">
+              {/* Ícone */}
+              <div className="w-10 h-10 relative mb-4">
                 <PrismicNextImage
                   field={item.tech_image}
                   fallbackAlt=""
@@ -33,11 +41,15 @@ const StackSection = ({ slice }: StackSectionProps) => {
                   className="object-contain"
                 />
               </div>
-              
-              {/* Nome da Tecnologia */}
-              <span className="text-gray-700 font-semibold text-center">
-                {item.tech_name}
-              </span>
+
+              {/* Título */}
+              <h3 className="text-lg font-bold mb-2">{item.tech_name}</h3>
+
+              {/* Texto */}
+              <p className="text-sm text-red-100">
+                Lorem ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
             </div>
           ))}
         </div>

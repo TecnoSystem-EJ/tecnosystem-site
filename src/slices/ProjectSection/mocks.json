@@ -9,7 +9,7 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Projetos que temos orgulho ",
+							"text": "Nossos projetos !\nProjetos que temos orgulho !",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -48,7 +48,6 @@
 					[
 						"project_image",
 						{
-							"__TYPE__": "ImageContent",
 							"provider": "imgix",
 							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZHVuZXN8ZW58MHx8fHwxNzczMjI4NjA0fDA&ixlib=rb-4.1.0&q=85",
 							"alt": "sand dune",
@@ -68,6 +67,8 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]
@@ -103,7 +104,6 @@
 					[
 						"project_image",
 						{
-							"__TYPE__": "ImageContent",
 							"provider": "imgix",
 							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZHVuZXN8ZW58MHx8fHwxNzczMjI4NjA0fDA&ixlib=rb-4.1.0&q=85",
 							"alt": "sand dune",
@@ -123,11 +123,12 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]
-				],
-				"key": "3525691c-c996-4088-af35-08c97767a174"
+				]
 			},
 			{
 				"__TYPE__": "GroupItemContent",
@@ -159,7 +160,6 @@
 					[
 						"project_image",
 						{
-							"__TYPE__": "ImageContent",
 							"provider": "imgix",
 							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8RHVuZXN8ZW58MHx8fHwxNzczMjI4Njc1fDA&ixlib=rb-4.1.0&q=85",
 							"alt": "sand dune",
@@ -179,11 +179,12 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]
-				],
-				"key": "1941409f-d687-43c4-ab3b-bb71a926fb30"
+				]
 			},
 			{
 				"__TYPE__": "GroupItemContent",
@@ -215,7 +216,6 @@
 					[
 						"project_image",
 						{
-							"__TYPE__": "ImageContent",
 							"provider": "imgix",
 							"url": "https://images.unsplash.com/photo-1504548840739-580b10ae7715?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8RHVuZXN8ZW58MHx8fHwxNzczMjI4Njc1fDA&ixlib=rb-4.1.0&q=85",
 							"alt": "sand dune",
@@ -235,11 +235,12 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]
-				],
-				"key": "bb67e00f-3903-4478-b4a3-8f8bb6cb02d1"
+				]
 			}
 		]
 	}
