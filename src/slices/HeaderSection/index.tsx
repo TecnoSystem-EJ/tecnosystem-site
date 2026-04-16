@@ -20,15 +20,14 @@ const HeaderSection = ({ slice }: HeaderSectionProps) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col gap-8 md:gap-16 mb-8 md:mb-16"
+      className="flex flex-col gap-8 md:gap-16 mb-8 md:mb-16 px-6 md:px-24"
     >
       <header className="flex flex-col gap-y-5">
         <div>
-          <h2 className="text-2xl font-primary text-primary-main my-3 lg:text-3xl">
+          <h2 className="text-xl md:text-2xl font-primary text-primary-main my-3 lg:text-3xl">
             {slice.primary.company_name}
           </h2>
-
-          <div className="text-3xl font-primary lg:text-6xl">
+          <div className="text-3xl md:text-5xl lg:text-6xl font-primary leading-tight">
             <PrismicRichText
               field={slice.primary.sub_title}
               components={{
@@ -48,7 +47,7 @@ const HeaderSection = ({ slice }: HeaderSectionProps) => {
           ))}
         </ul>
 
-        <div className="flex flex-row items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-4">
           <Button
             href={slice.primary.button_link_1}
             styles="primary"
@@ -69,18 +68,18 @@ const HeaderSection = ({ slice }: HeaderSectionProps) => {
         />
       </div>
 
-      <div className="flex flex-col gap-12 justify-between md:flex-row mb-8">
+      <div className="flex flex-col gap-6 md:flex-row md:flex-wrap lg:flex-nowrap justify-between mb-8">
         <PrismicNextImage
           field={slice.primary.image_1}
-          className="w-full md:w-[48%] lg:w-[32%]"
+          className="w-full md:w-[48%] lg:w-[32%] h-auto object-cover rounded-lg"
         />
         <PrismicNextImage
           field={slice.primary.image_2}
-          className="w-full md:w-[48%] lg:w-[32%]"
+          className="w-full md:w-[48%] lg:w-[32%] h-auto object-cover rounded-lg"
         />
         <PrismicNextImage
           field={slice.primary.image_3}
-          className="hidden lg:block lg:w-[32%]"
+          className="w-full md:w-[48%] lg:w-[32%] h-auto object-cover rounded-lg hidden md:block"
         />
       </div>
     </section>

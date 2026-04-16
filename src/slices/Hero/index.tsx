@@ -16,19 +16,24 @@ const Hero: FC<HeroProps> = ({ slice }) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="mr-24 ml-24 mb-10"
+       className="mx-6 md:mx-24 mb-10 mt-10"
     >
-    {/* Nome da Empresa */}
-      <PrismicRichText field={slice.primary.nome_da_empresa} components={{
-        heading3: ({ children }) => <h3 className="text-3xl mb-2 font-black text-red-600 font-righteous">{children}</h3>,
-      }}/>
+      <PrismicRichText 
+        field={slice.primary.nome_da_empresa} 
+        components={{
+          heading3: ({ children }) => (
+            <h3 className="text-xl md:text-3xl mb-2 font-black text-red-600 font-righteous">
+              {children}
+            </h3>
+          ),
+        }}
+      />
 
-      {/* Títlo do Hero */}
       <PrismicRichText
         field={slice.primary.hero_text}
         components={{
           heading1: ({ children }) => (
-            <h1 className="text-8xl font-righteous font-bold mb-4 text-black">
+            <h1 className="text-4xl md:text-8xl font-righteous font-bold mb-4 text-black leading-tight">
               {children}
             </h1>
           ),
@@ -38,27 +43,31 @@ const Hero: FC<HeroProps> = ({ slice }) => {
         }}
       />
 
+      <div className="space-y-3">
+        {slice.primary.topicos_hero.map((item: any, index: number) => (
+          <div key={index} className="flex gap-2 items-start">
+            <i className="bi bi-check-circle-fill text-base md:text-lg text-red-600 mt-1"></i>
+            <PrismicRichText
+              field={item.texto}
+              components={{
+                paragraph: ({ children }) => (
+                  <p className="uppercase text-sm md:text-lg leading-relaxed">{children}</p>
+                ),
+              }}
+            />
+          </div>
+        ))}
+      </div>
 
-      {/* Tópicos de Subtítulo */}
-      {slice.primary.topicos_hero.map((item: any, index: number) => (
-        <div key={index} className="flex gap-2 items-start">
-          <i className="bi bi-check-circle-fill text-lg text-red-600"></i>
-          <PrismicRichText
-            field={item.texto}
-            components={{
-              paragraph: ({ children }) => (
-                <p className="uppercase text-lg">{children}</p>
-              ),
-            }}
-          />
-        </div>
-      ))}
-
-
-      {/* botão contate-nos */}
-      <div className="flex gap-2 mt-6 text-md text-xl font-bold text-white">
-      <PrismicNextLink field={slice.primary.button_contate} className="p-3 pr-4 pl-4 bg-red-600 rounded-md" />
-      <PrismicNextLink field={slice.primary.button_saibamais} className="p-3 pr-4 pl-4 border border-red-600 text-red-600 rounded-md" />
+      <div className="flex flex-col md:flex-row gap-3 mt-8 text-center">
+        <PrismicNextLink 
+          field={slice.primary.button_contate} 
+          className="p-3 px-6 bg-red-600 text-white rounded-md font-bold text-lg md:text-xl transition-transform active:scale-95" 
+        />
+        <PrismicNextLink 
+          field={slice.primary.button_saibamais} 
+          className="p-3 px-6 border border-red-600 text-red-600 rounded-md font-bold text-lg md:text-xl transition-transform active:scale-95" 
+        />
       </div>
     </section>
   );
